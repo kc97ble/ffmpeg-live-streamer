@@ -1,0 +1,19 @@
+{
+  "name": "fls-backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc-watch --outDir dist --onSuccess 'node dist/index.js'"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.11",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.8",
+    "typescript": "^3.9.5"
+  }
+}
