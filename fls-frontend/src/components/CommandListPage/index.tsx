@@ -2,9 +2,9 @@ import * as React from "react";
 import * as api from "common/api";
 import * as urls from "common/utils/urls";
 
-import Button from "common/components/Button";
+import Button from "common/controls/Button";
 
-import "shared/style.css";
+import "common/style.css";
 
 import type { Command } from "common/types";
 
@@ -26,7 +26,7 @@ function Main(props: MainProps) {
 
   const createNewCommand = React.useCallback(async () => {
     await api.createNewCommand();
-    const response = await api.getAllCommands();
+    const response = await api.getCommandList();
     setCommands(response.data);
   }, [setCommands]);
 
@@ -49,7 +49,7 @@ export default function CommandManager() {
   const [commands, setCommands] = React.useState<any>([]);
 
   React.useEffect(() => {
-    api.getAllCommands().then((response) => setCommands(response.data));
+    api.getCommandList().then((response) => setCommands(response.data));
   }, []);
   const mainProps = { commands, setCommands };
   return (

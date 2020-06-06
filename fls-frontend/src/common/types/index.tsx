@@ -1,6 +1,6 @@
 import * as uuid from "uuid";
 
-export type ApiResult<T> = { message?: string; data?: T };
+export type ApiResult<T> = { message?: string; data?: T; error?: string };
 
 export type Id = string;
 export type Option = { key: string; value: string };
