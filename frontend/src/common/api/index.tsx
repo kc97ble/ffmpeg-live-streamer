@@ -1,5 +1,5 @@
-import type { ApiResult, Command, Id } from "common/types";
-import * as types from "common/types";
+import type { ApiResult, Command, Id } from "shared/src/types";
+import * as types from "shared/src/types";
 
 const FAKE_COMMAND_LIST = "FAKE_COMMAND_LIST";
 const DEFAULT_ERROR = "Unknown error";

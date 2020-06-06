@@ -1,0 +1,14 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@types/uuid": "^8.0.0",
+    "typescript": "^3.9.5",
+    "uuid": "^8.1.0"
+  }
+}

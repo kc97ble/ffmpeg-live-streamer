@@ -1,5 +1,5 @@
 import React from "react";
-import { Command } from "common/types";
+import { Command } from "shared/src/types";
 import Button from "common/controls/Button";
 import * as urls from "common/utils/urls";
 
