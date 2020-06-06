@@ -6,7 +6,7 @@ import Button from "common/controls/Button";
 
 import "common/style.css";
 
-import type { Command } from "common/types";
+import type { Command } from "shared/src/types";
 
 type MainProps = {
   commands: Array<Command>;

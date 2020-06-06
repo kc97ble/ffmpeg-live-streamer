@@ -38,15 +38,15 @@ export async function filterCommandList(pred: (command: Command) => boolean) {
 }
 
 export async function getCommand(commandId: Id): Promise<ApiResult<Command>> {
-  const filtered = await filterCommandList((c) => c.id == commandId);
-  return filtered.length == 0 ? failedResult() : successResult(filtered[0]);
+  const filtered = await filterCommandList((c) => c.id === commandId);
+  return filtered.length === 0 ? failedResult() : successResult(filtered[0]);
 }
 
 export async function saveCommand(commandId: Id, newCommand: Command): Promise<ApiResult<null>> {
   const commandList = getFakeCommandList();
-  const index = commandList.findIndex((c) => c.id == commandId);
+  const index = commandList.findIndex((c) => c.id === commandId);
   const newCommandList =
-    index == -1
+    index === -1
       ? commandList.concat([newCommand])
       : [...commandList.slice(0, index), newCommand, ...commandList.slice(index + 1)];
   setFakeCommandList(newCommandList);

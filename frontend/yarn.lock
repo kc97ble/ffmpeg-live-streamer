@@ -2517,7 +2517,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braces@~3.0.2:
+braces@^3.0.1, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -2795,7 +2795,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
+chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -3921,7 +3921,7 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^4.1.0:
+enhanced-resolve@^4.0.0, enhanced-resolve@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-4.1.1.tgz#2937e2b8066cd0fe7ce0990a98f0d71a35189f66"
   integrity sha512-98p2zE+rL7/g/DzMHMTF4zZlCgeVdJ7yr6xzEpJRYwFYrGi9ANdn5DnJURg6RpBkyk60XYDnWIv51VfIhfNGuA==
@@ -4738,11 +4738,6 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fsevents@2.1.2, fsevents@~2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.2.tgz#4c0a1fb34bc68e543b4b82a9ec392bfbda840805"
-  integrity sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA==
-
 fsevents@^1.2.7:
   version "1.2.12"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.12.tgz#db7e0d8ec3b0b45724fd4d83d43554a8f1f0de5c"
@@ -4750,6 +4745,11 @@ fsevents@^1.2.7:
   dependencies:
     bindings "^1.5.0"
     nan "^2.12.1"
+
+fsevents@~2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.1.2.tgz#4c0a1fb34bc68e543b4b82a9ec392bfbda840805"
+  integrity sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -6513,7 +6513,7 @@ loader-utils@1.2.3:
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
   integrity sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
@@ -6753,6 +6753,14 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
+
+micromatch@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
+  integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
+  dependencies:
+    braces "^3.0.1"
+    picomatch "^2.0.5"
 
 miller-rabin@^4.0.0:
   version "4.0.1"
@@ -7632,6 +7640,11 @@ picomatch@^2.0.4, picomatch@^2.0.7:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.1.tgz#21bac888b6ed8601f831ce7816e335bc779f0a4a"
   integrity sha512-ISBaA8xQNmwELC7eOjqFKMESB2VIqt4PPDD0nsS95b/9dZXvVKOlz9keMSnoGGKcOHXfTvDD6WMaRoSc9UuhRA==
+
+picomatch@^2.0.5:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
+  integrity sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
 
 pify@^2.0.0:
   version "2.3.0"
@@ -8716,66 +8729,6 @@ react-router@5.2.0:
     react-is "^16.6.0"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
-
-react-scripts@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.4.1.tgz#f551298b5c71985cc491b9acf3c8e8c0ae3ada0a"
-  integrity sha512-JpTdi/0Sfd31mZA6Ukx+lq5j1JoKItX7qqEK4OiACjVQletM1P38g49d9/D0yTxp9FrSF+xpJFStkGgKEIRjlQ==
-  dependencies:
-    "@babel/core" "7.9.0"
-    "@svgr/webpack" "4.3.3"
-    "@typescript-eslint/eslint-plugin" "^2.10.0"
-    "@typescript-eslint/parser" "^2.10.0"
-    babel-eslint "10.1.0"
-    babel-jest "^24.9.0"
-    babel-loader "8.1.0"
-    babel-plugin-named-asset-import "^0.3.6"
-    babel-preset-react-app "^9.1.2"
-    camelcase "^5.3.1"
-    case-sensitive-paths-webpack-plugin "2.3.0"
-    css-loader "3.4.2"
-    dotenv "8.2.0"
-    dotenv-expand "5.1.0"
-    eslint "^6.6.0"
-    eslint-config-react-app "^5.2.1"
-    eslint-loader "3.0.3"
-    eslint-plugin-flowtype "4.6.0"
-    eslint-plugin-import "2.20.1"
-    eslint-plugin-jsx-a11y "6.2.3"
-    eslint-plugin-react "7.19.0"
-    eslint-plugin-react-hooks "^1.6.1"
-    file-loader "4.3.0"
-    fs-extra "^8.1.0"
-    html-webpack-plugin "4.0.0-beta.11"
-    identity-obj-proxy "3.0.0"
-    jest "24.9.0"
-    jest-environment-jsdom-fourteen "1.0.1"
-    jest-resolve "24.9.0"
-    jest-watch-typeahead "0.4.2"
-    mini-css-extract-plugin "0.9.0"
-    optimize-css-assets-webpack-plugin "5.0.3"
-    pnp-webpack-plugin "1.6.4"
-    postcss-flexbugs-fixes "4.1.0"
-    postcss-loader "3.0.0"
-    postcss-normalize "8.0.1"
-    postcss-preset-env "6.7.0"
-    postcss-safe-parser "4.0.1"
-    react-app-polyfill "^1.0.6"
-    react-dev-utils "^10.2.1"
-    resolve "1.15.0"
-    resolve-url-loader "3.1.1"
-    sass-loader "8.0.2"
-    semver "6.3.0"
-    style-loader "0.23.1"
-    terser-webpack-plugin "2.3.5"
-    ts-pnp "1.1.6"
-    url-loader "2.3.0"
-    webpack "4.42.0"
-    webpack-dev-server "3.10.3"
-    webpack-manifest-plugin "2.2.0"
-    workbox-webpack-plugin "4.3.1"
-  optionalDependencies:
-    fsevents "2.1.2"
 
 react@^16.13.1:
   version "16.13.1"
@@ -10182,6 +10135,17 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+ts-loader@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-7.0.5.tgz#789338fb01cb5dc0a33c54e50558b34a73c9c4c5"
+  integrity sha512-zXypEIT6k3oTc+OZNx/cqElrsbBtYqDknf48OZos0NQ3RTt045fBIU8RRSu+suObBzYB355aIPGOe/3kj9h7Ig==
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^4.0.0"
+    semver "^6.0.0"
 
 ts-pnp@1.1.6, ts-pnp@^1.1.6:
   version "1.1.6"

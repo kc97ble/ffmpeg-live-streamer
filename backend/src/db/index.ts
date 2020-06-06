@@ -1,5 +1,5 @@
 import sqlite3 from "sqlite3";
-import { types } from "shared";
+import * as types from "shared/src/types";
 
 console.info("Opening database...");
 const db = new sqlite3.Database(":memory:");

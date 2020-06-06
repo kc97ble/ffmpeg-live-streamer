@@ -1,10 +1,10 @@
 import * as React from "react";
-import * as types from "common/types";
+import * as types from "shared/src/types";
 import { useParams } from "react-router-dom";
 
 import * as api from "common/api";
 import CommandEditor from "common/editors/CommandEditor";
-import { Command } from "common/types";
+import { Command } from "shared/src/types";
 import "common/style.css";
 
 export default function CommandEditorPage(props: any) {
@@ -16,7 +16,7 @@ export default function CommandEditorPage(props: any) {
     api.getCommand(commandId).then((response) => {
       setCommand(response.data || null);
     });
-  }, []);
+  }, [commandId]);
 
   const changed = (newCommand: Command | null) => {
     if (newCommand == null) return;
